@@ -12,6 +12,11 @@
 		"fix": "biome check --write --unsafe ."
 	},
 	"dependencies": {
+		"@mantine/core": "^7.14.3",
+		"@mantine/dates": "^7.14.3",
+		"@mantine/form": "^7.14.3",
+		"@mantine/hooks": "^7.14.3",
+		"dayjs": "^1.11.13",
 		"next": "canary",
 		"react": "canary",
 		"react-dom": "canary"
@@ -22,6 +27,21 @@
 		"@types/react": "^18.3.12",
 		"@types/react-dom": "^18.3.1",
 		"babel-plugin-react-compiler": "19.0.0-beta-df7b47d-20241124",
+		"postcss": "^8.4.49",
+		"postcss-preset-mantine": "^1.17.0",
+		"postcss-simple-vars": "^7.0.1",
 		"typescript": "5.7.2"
+	},
+	"plugins": {
+		"postcss-preset-mantine": {},
+		"postcss-simple-vars": {
+			"variables": {
+				"mantine-breakpoint-xs": "36em",
+				"mantine-breakpoint-sm": "48em",
+				"mantine-breakpoint-md": "62em",
+				"mantine-breakpoint-lg": "75em",
+				"mantine-breakpoint-xl": "88em"
+			}
+		}
 	}
 }
